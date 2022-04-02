@@ -22,9 +22,6 @@ jobs:
           yarn build
           yarn export
 
-      - name: Ensure nojekyll 🔧
-        run: touch out/.nojekyll
-
       - name: Deploy 🚀
         uses: JamesIves/github-pages-deploy-action@v4.2.5
         with:
