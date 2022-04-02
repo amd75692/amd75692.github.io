@@ -10,12 +10,17 @@ import { fetcher } from "../../lib/fetcher";
 const SpotifyCard: FC = () => {
   const { data, error } = useSWR<NowPlayingSong>("/api/now-playing", fetcher);
 
+  const myLoader = ({ src, width }) => {
+    return `/${src}?w=${width}&q=${75}`
+  }
+
   return (
     <>
       <div className="font-sen mb-8 flex flex-row items-center justify-center gap-x-2 rounded-md bg-zinc-800 px-3 py-2 text-center text-lg text-gray-300">
         {data?.isPlaying ? (
           <>
             <Image
+              loader={myLoader}
               src={data?.albumImageUrl}
               height="70"
               width="70"
@@ -36,6 +41,7 @@ const SpotifyCard: FC = () => {
         ) : (
           <>
             <Image
+              loader={myLoader}
               src="/assests/spotify.svg"
               width="50"
               height="50"

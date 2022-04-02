@@ -6,10 +6,15 @@ import { useRouter } from "next/router";
 const ErrorPage: NextPage = () => {
   const router = useRouter();
 
+  const myLoader = ({ src, width }) => {
+    return `/${src}?w=${width}&q=${75}`
+  }
+
   return (
     <>
       <div className="flex min-h-screen min-w-full flex-col justify-center bg-[#fafdfe]">
         <Image
+          loader={myLoader}
           src="/assests/404.svg"
           width="800"
           height="400"
