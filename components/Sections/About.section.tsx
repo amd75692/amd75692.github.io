@@ -3,15 +3,6 @@ import Link from "next/link";
 
 import { HiOutlineArrowNarrowRight } from "../Misc/Icons.collection";
 
-
-const prefix = process.env.NEXT_PUBLIC_BASE_PATH || '';
-
-
-const myLoader = ({ src, width }) => {
-  return `${prefix}${src}?w=${width}&q=${75}`
-}
-
-
 const About = () => {
   return (
     <div className="my-8 flex flex-row items-center justify-between px-3 font-sen">
@@ -51,7 +42,6 @@ const About = () => {
 
       <div className="hidden custom:block">
         <Image
-          loader={myLoader}
           src="/assests/avatar.png"
           width="112"
           height="112"
