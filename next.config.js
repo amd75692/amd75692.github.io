@@ -1,11 +1,7 @@
 const path = require("path");
 
-const prefix = process.env.NEXT_PUBLIC_BASE_PATH || '';
-
 module.exports = {
-  prefix,
-  basePath: process.env.NEXT_PUBLIC_BASE_PATH,
-  assetPrefix: process.env.NEXT_PUBLIC_BASE_PATH,
+  assetPrefix: "/amd75692.github.io/",
   sassOptions: {
     includePaths: [path.join(__dirname, "styles")],
   },
