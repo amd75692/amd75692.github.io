@@ -31,23 +31,16 @@ function MyApp({ Component, pageProps }: AppProps) {
                 `}
       </Script>
       <NextSeo
-        title="Anurag | Frontend Developer"
-        titleTemplate="Anurag | Frontend Developer"
-        defaultTitle="Anurag | Frontend Developer"
-        description="Hey! I'm Anurag, A Frontend Developer, Blogger and a Student!"
+        title="AMD | DevOps Engineer"
+        titleTemplate="AMD | DevOps Engineer"
+        defaultTitle="AMD | DevOps Engineer"
+        description="Hey! I'm AMD, A DevOps Engineer, Blogger and a Student!"
         openGraph={{
-          url: "https://www.anurag.tech/",
-          title: "Anurag | Frontend Developer",
+          url: "https://www.google.com/",
+          title: "AMD | DevOps",
           description:
-            "Hey! I'm Anurag, A Frontend Developer, Blogger and a Student!",
-          images: [
-            {
-              url: "https://res.cloudinary.com/ddum5vpp3/image/upload/v1643532760/og-image_dwcwhp.png",
-              width: 800,
-              height: 420,
-              alt: "Anurag | Frontend Developer",
-            },
-          ],
+            "Hey! I'm AMD, A DevOps Engineer !",
+          images: [],
         }}
         twitter={{
           handle: "@kr_anurag_",
@@ -58,7 +51,7 @@ function MyApp({ Component, pageProps }: AppProps) {
           {
             property: "keywords",
             content:
-              "Frontend Developer, anurag, anuragkr, Web Developer, web development, web developer, blogger, tech enthusiast, open source",
+              "DevOps Engineer",
           },
         ]}
       />
