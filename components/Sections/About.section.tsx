@@ -3,8 +3,10 @@ import Link from "next/link";
 
 import { HiOutlineArrowNarrowRight } from "../Misc/Icons.collection";
 
+const prefix = "/amd75692.github.io";
+
 const myLoader = ({ src, width }) => {
-  return `/${src}?w=${width}&q=${75}`
+  return `${prefix}/${src}?w=${width}&q=${75}`
 }
 
 
