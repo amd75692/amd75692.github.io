@@ -3,10 +3,12 @@ import Link from "next/link";
 
 import { HiOutlineArrowNarrowRight } from "../Misc/Icons.collection";
 
-const prefix = "/amd75692.github.io";
+
+const prefix = process.env.NEXT_PUBLIC_BASE_PATH || '';
+
 
 const myLoader = ({ src, width }) => {
-  return `${prefix}/${src}?w=${width}&q=${75}`
+  return `${prefix}${src}?w=${width}&q=${75}`
 }
 
 

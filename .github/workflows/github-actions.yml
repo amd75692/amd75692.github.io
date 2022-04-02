@@ -6,10 +6,7 @@ jobs:
   build-and-deploy:
     runs-on: ubuntu-latest
 
-    env:
-      NEXT_PUBLIC_BASE_PATH: /amd75692.github.io
-
-
+    
     steps:
       - name: Checkout 🛎️
         uses: actions/checkout@v3
@@ -18,6 +15,8 @@ jobs:
         uses: borales/actions-yarn@v2.3.0
 
       - name: Build and export 🔧
+        env:
+          NEXT_PUBLIC_BASE_PATH: /amd75692.github.io
         run: |
           yarn build
           yarn export

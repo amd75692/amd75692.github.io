@@ -10,8 +10,10 @@ import { fetcher } from "../../lib/fetcher";
 const SpotifyCard: FC = () => {
   const { data, error } = useSWR<NowPlayingSong>("/api/now-playing", fetcher);
 
+  const prefix = process.env.NEXT_PUBLIC_BASE_PATH || '';
+
   const myLoader = ({ src, width }) => {
-    return `/${src}?w=${width}&q=${75}`
+    return `${prefix}${src}?w=${width}&q=${75}`
   }
 
   return (
