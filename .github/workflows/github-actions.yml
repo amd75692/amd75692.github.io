@@ -8,6 +8,7 @@ jobs:
 
     env:
       NEXT_PUBLIC_BASE_PATH: /amd75692.github.io
+      
 
     steps:
       - name: Checkout 🛎️
