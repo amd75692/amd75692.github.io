@@ -7,9 +7,9 @@ jobs:
     steps:
       - name: Checkout 🛎️
         uses: actions/checkout@v3
+        uses: borales/actions-yarn@v2.3.0
 
       - name: Build and export 🔧
-        uses: borales/actions-yarn@v2.3.0
         run: |
           yarn build
           yarn export
