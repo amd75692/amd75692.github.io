@@ -7,14 +7,13 @@ const About = () => {
   return (
     <div className="my-8 flex flex-row items-center justify-between px-3 font-sen">
       <div>
-        <p className="text-3xl font-bold text-white">Anurag</p>
+        <p className="text-3xl font-bold text-white">Ahmede</p>
         <p className="mt-1 text-lg text-gray-300">
-          Frontend Developer, Blogger and a Student
+          DevOps Engineer and Fullstack development
         </p>
 
         <p className="mt-4 text-gray-400">
-          Building Web apps, proficient in Frontend. Writing articles <br /> on
-          my blog sometimes.
+          Building Web apps, pipelines and architectures. <br /> 
         </p>
 
         <Link href="https://blog.anurag.tech" passHref>

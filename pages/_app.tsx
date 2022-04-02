@@ -34,17 +34,17 @@ function MyApp({ Component, pageProps }: AppProps) {
         title="AMD | DevOps Engineer"
         titleTemplate="AMD | DevOps Engineer"
         defaultTitle="AMD | DevOps Engineer"
-        description="Hey! I'm AMD, A DevOps Engineer, Blogger and a Student!"
+        description="Hey! I'm Ahmede, A DevOps Engineer !"
         openGraph={{
           url: "https://www.google.com/",
           title: "AMD | DevOps",
           description:
-            "Hey! I'm AMD, A DevOps Engineer !",
+            "Hey! I'm Ahmede, A DevOps Engineer !",
           images: [],
         }}
         twitter={{
-          handle: "@kr_anurag_",
-          site: "@kr_anurag_",
+          handle: "@amd75692",
+          site: "@amd75692",
           cardType: "summary_large_image",
         }}
         additionalMetaTags={[
